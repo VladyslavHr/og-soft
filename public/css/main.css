@@ -1,0 +1,14 @@
+.links-list{
+    list-style: none;
+    padding: 0;
+}
+
+.links-list-link{
+    text-decoration: none;
+    color: black;
+}
+
+.links-list-link:hover{
+    transition: .5s;
+    color: grey;
+}

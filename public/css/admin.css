@@ -1,0 +1,83 @@
+.border-devider{
+    border-bottom: 2px solid #9c27b069;
+    padding-bottom: 15px;
+}
+
+#admin_pageloader,
+#admin_pageloader_refund,
+#admin_pageloader_order_refund
+{
+  background: rgba( 255, 255, 255, 0.8 );
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+}
+
+.preloader-img{
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+    position: absolute;
+    top: 50%;
+}
+
+
+.order-status-paid{
+    background-color: rgb(25, 112, 25);
+    color: #fff;
+    padding: 4px;
+    border-radius: 7%;
+}
+.order-status-canceled{
+    background-color: rgb(255, 44, 44);
+    color: #fff;
+    padding: 4px;
+    border-radius: 7%;
+}
+.order-status-created{
+    background-color: rgb(255 165 0);
+    color: #fff;
+    padding: 4px;
+    border-radius: 7%;
+}
+.order-status-pending{
+    background-color: rgb(170, 170, 170);
+    color: #fff;
+    padding: 4px;
+    border-radius: 7%;
+}
+.order-status-failed{
+    background-color: rgb(85, 0, 0);
+    color: #fff;
+    padding: 4px;
+    border-radius: 7%;
+}
+.order-status-refund{
+    background-color: rgb(86, 159, 255);
+    color: #fff;
+    padding: 4px;
+    border-radius: 7%;
+}
+.order-status-part-refund{
+    background-color: rgb(155, 195, 247);
+    color: #fff;
+    padding: 4px;
+    border-radius: 7%;
+}
+
+.chart-pie{
+
+    max-width: 200px;
+    max-height: 300px;
+    display: block;
+    box-sizing: border-box;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+
+}
