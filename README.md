@@ -17,3 +17,26 @@ test_DateFilterWithWorkDay(): Ověřuje filtrace datumu s pracovním dnem a zaji
 test_DateFilterWithHoliday(): Ověřuje filtrace datumu s svátkem a zajišťuje, že zpráva obsahuje informace o svátku.
 Spuštění
 Můžete spustit tento testovací kontrolér pomocí PHPUnit nebo příkazu php artisan test. Ujistěte se, že vaše aplikace je nakonfigurována a připravena k testování.
+
+
+# Тестовый контроллер GeneralOneControllerTest
+
+Этот тестовый контроллер содержит несколько юнит-тестов для проверки функциональности API, предоставляемого контроллером `GeneralOneController`.
+
+## Установка и запуск
+
+1. Убедитесь, что у вас установлен PHP и Composer.
+2. Клонируйте репозиторий или скопируйте код тестового контроллера.
+3. Установите зависимости, выполнив команду `composer install`.
+4. Запустите тесты, выполнив команду `php artisan test`.
+
+## Содержимое
+
+- `test_CheckApiRoute()`: Проверяет маршрут `/api/check-api` и убеждается, что он возвращает код состояния HTTP 200.
+- `test_DateFilterWithWeekend()`: Проверяет фильтр даты с выходным днем и убеждается, что сообщение содержит информацию о выходном дне.
+- `test_DateFilterWithWorkDay()`: Проверяет фильтр даты с рабочим днем и убеждается, что сообщение содержит информацию о рабочем дне.
+- `test_DateFilterWithHoliday()`: Проверяет фильтр даты с праздничным днем и убеждается, что сообщение содержит информацию о празднике.
+
+## Запуск
+
+Вы можете запустить этот тестовый контроллер, используя PHPUnit или команду `php artisan test`. Убедитесь, что ваше приложение настроено и доступно для тестирования.
