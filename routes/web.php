@@ -18,9 +18,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home.index');
-Route::get('general-one', [App\Http\Controllers\GeneralOneController::class, 'index'])->name('general.one');
-Route::get('general-two', [App\Http\Controllers\GeneralTwoController::class, 'index'])->name('general.two');
-
-
+Route::get('/', [App\Http\Controllers\GeneralOneController::class, 'index'])->name('general.one');
+Route::get('check-api', [GeneralOneController::class, 'checkApi']);
+// Route::get('/date-check', [App\Http\Controllers\GeneralOneController::class, 'dateCheck']);
 Route::post('dateFilter', [App\Http\Controllers\GeneralOneController::class, 'dateFilter']);

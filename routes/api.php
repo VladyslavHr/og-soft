@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GeneralOneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('dateFilter', [GeneralOneController::class, 'dateFilter']);
 
-Route::post('post-date', [App\Http\Controllers\GeneralOneController::class, 'dateFilter']);
+Route::get('check-api', [GeneralOneController::class, 'checkApi']);
+
